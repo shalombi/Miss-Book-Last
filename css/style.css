@@ -1,0 +1,293 @@
+/* general  */
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+    margin: 0;
+}
+
+
+
+/* general */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+input,
+select {
+    background: #313131;
+    border-radius: 4px;
+    color: #f7f3f0;
+    height: 27px;
+    font-size: 15px;
+}
+
+/* helpers */
+
+.red {
+    color: rgb(224, 29, 29);
+}
+
+.green {
+    color: green;
+}
+
+
+/* classes */
+.router-link {
+    color: #f7f3f0;
+}
+
+.router-link-exact-active {
+    background: rgb(255, 128, 0)
+}
+
+/* header and footer */
+.app-header img {
+    /* max-width: 80px; */
+    margin-left: 10px;
+    margin-left: 10px;
+    height: 8vh;
+
+    border-radius: 10px;
+
+
+}
+
+.header-text,
+.footer-text {
+    font-size: 30px;
+    color: rgb(253, 254, 255);
+    margin-left: 20px;
+}
+
+.footer-text {
+    font-size: 25px;
+    color: rgb(231, 231, 231);
+}
+
+
+.header-dot {
+    color: rgb(255, 148, 42);
+    font-size: 40px;
+}
+
+.app-footer,
+.app-header {
+    display: flex;
+    align-items: center;
+    background-color: #333333;
+    padding: 10px;
+    color: #f7f3f0;
+}
+
+.app-header {
+    height: 10vh;
+    position: relative;
+}
+
+.app-header nav {
+    /* background-color: #ffffff; */
+    /* display: flex;
+    justify-content: end; */
+    font-size: 20px;
+    position: absolute;
+    right: 5%;
+}
+
+.app-footer {
+    height: 10vh;
+}
+
+/* app */
+
+.book-filter {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 180px));
+}
+
+/* .user-msg {
+} */
+
+.success {
+    background-color: chartreuse;
+}
+
+.fail {
+    background-color: rgb(244, 47, 47);
+}
+
+.user-msg {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+
+    width: 290px;
+    background-color: rgb(208, 206, 139);
+    padding: 10px;
+    border-radius: 5px;
+    /* transition: opacity 1s; */
+}
+
+/* book-app cmp */
+
+.book-app {
+    min-height: 80vh;
+    background-color: darkorange;
+    padding: 10px;
+}
+
+/* book-list cmp */
+
+.book-list ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    list-style-type: none;
+    background-color: #f7f3f0;
+    padding: 10px;
+}
+
+.book-list ul li {
+    display: grid;
+    background-color: rgb(29, 36, 36);
+    padding: 10px;
+    justify-items: center;
+    color: rgb(234, 234, 234);
+}
+
+.actions {
+    justify-self: end;
+    margin-top: 15px;
+}
+
+/* book-details cmp */
+
+
+.book-details {
+    display: grid;
+    /* background-color: rgb(233 237 238); */
+    padding: 10px;
+    margin-block-end: 10px;
+    background: #262626;
+    color: #ececec;
+}
+
+.book-details button {
+    justify-self: end;
+}
+
+.book-details img {
+    width: 200px;
+    margin-top: 20px;
+    justify-self: center;
+    /* transition: rotate 1s; */
+}
+
+.book-details span {
+    padding: 15px;
+}
+
+.book-details .saleImg {
+    justify-self: left;
+    max-width: 100px;
+    margin-left: 1%;
+}
+
+/* .book-details img:hover { */
+/* rotate: -10deg; */
+/* } */
+.info-book {
+    color: orange;
+}
+
+.book-details .price {
+    text-align: center;
+}
+
+.price {
+    margin-top: 24px;
+}
+
+/* book-edit cmp */
+
+.book-edit {
+    background-color: rgb(58 58 58);
+    padding: 10px;
+}
+
+.book-edit-headline {
+    font-size: 24px;
+    color: #fbf2f2;
+    margin: 7px;
+}
+
+button {
+    min-width: 40px;
+    background: #2f2121;
+    border-radius: 5px;
+    margin-top: 4px;
+    height: 28px;
+    font-size: 18px;
+    color: #f4efef;
+}
+
+button:hover,
+select:hover {
+    background-color: #625f5f;
+    cursor: pointer;
+}
+
+.book-edit form {
+    display: flex;
+    flex-direction: column;
+    max-width: 65px;
+    gap: 6px;
+}
+
+/* book-preview cmp */
+
+.prev-img {
+    max-width: 120px;
+    /* border-radius: 6px; */
+}
+
+.book-preview {
+    display: grid;
+    grid-template-rows: 1fr 0.9fr;
+}
+
+.book-preview h2,
+.book-preview h3,
+.prev-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* more of  details cmp */
+.next-book {
+    background-color: #1f1b1b;
+    /* text-align: center; */
+    padding: 8px;
+    font-size: 23px;
+}
+
+.next-book .router-link {
+    color: rgb(190, 189, 188);
+
+}
